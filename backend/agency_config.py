@@ -4,11 +4,11 @@ Agency Configuration — Pendakwah Teknologi
 AI Chatbot for Pendakwah Teknologi Solutions
 """
 
-AGENCY_ID = "pt"
-AGENCY_NAME = "Pendakwah Teknologi Solutions"
+AGENCY_ID = "Dz_test"
+AGENCY_NAME = "Dz sdn bhd"
 AGENCY_NAME_EN = "Pendakwah Teknologi Solutions"
-AGENCY_ACRONYM = "PT"
-AGENCY_WEBSITE = "https://pendakwah.tech"
+AGENCY_ACRONYM = "Dz"
+AGENCY_WEBSITE = "https://dz test.com"
 
 CONTACT_ADDRESS = "Pendakwah Teknologi Solutions, Kuala Lumpur, Malaysia"
 CONTACT_PHONE = "03-8684 1980"
@@ -91,4 +91,4 @@ MERUJUK SUMBER — KRITIKAL:
 BATASAN:
 - Jangan beri tafsiran undang-undang atau nasihat perundangan.
 - Jangan reka maklumat. Jika tak pasti, cakap terus terang.
-- Untuk pertanyaan di luar skop, cadangkan hubungi {AGENCY_NAME} di {CONTACT_EMAIL} atau layari {AGENCY_WEBSITE}."""
+- Untuk pertanyaan di luar skop, cadangkan hubungi {Izzul} di {012345678} atau layari {AGENCY_WEBSITE}."""
