@@ -81,7 +81,7 @@ def get_chroma_collection():
         from agency_config import CHROMA_COLLECTION_NAME
 
         persist_dir = os.environ.get("CHROMA_PERSIST_DIR", "/opt/pt-chatbot/chroma_db")
-        print(f"[PT] Initializing ChromaDB at: {persist_dir}")
+        print(f"[PT] Initialising ChromaDB at: {persist_dir}")
         client = chromadb.PersistentClient(path=persist_dir)
         _chroma_collection = client.get_or_create_collection(
             name=CHROMA_COLLECTION_NAME,
@@ -749,7 +749,7 @@ def _get_tavily_client():
                 try:
                     from tavily import TavilyClient
                     _tavily_client = TavilyClient(api_key=key)
-                    print("[PT] Tavily web search client initialized")
+                    print("[PT] Tavily web search client initialised")
                 except ImportError:
                     print("[PT] tavily-python not installed, Tavily search disabled")
     return _tavily_client
@@ -868,7 +868,7 @@ def get_providers() -> Dict[str, Any]:
     global _providers
     if _providers is None:
         print(f"\n{'='*60}")
-        print(f"  INITIALIZING PT CHATBOT PROVIDERS")
+        print(f"  INITIALISING PT CHATBOT PROVIDERS")
         print(f"{'='*60}\n")
 
         # Main answer: GPT-4o (best quality)
@@ -903,7 +903,7 @@ def get_providers() -> Dict[str, Any]:
         print(f"[PT] Main LLM: {model_main}")
         print(f"[PT] Fast LLM: {model_fast} (expansion/eval/followups)")
         print(f"[PT] Web search: {web_str}")
-        print(f"[PT] Providers initialized: {_providers['description']}")
+        print(f"[PT] Providers initialised: {_providers['description']}")
 
     return _providers
 

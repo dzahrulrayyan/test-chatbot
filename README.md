@@ -36,7 +36,7 @@ This is **not** a toy chatbot. This is a full-stack, production-ready AI assista
 - **Speaks and listens** with built-in voice (STT + TTS)
 - **Logs everything** with a full admin dashboard for audit trails
 
-Built for [Pendakwah Teknologi](https://pendakwah.tech) — a digital transformation company specializing in AI training, cybersecurity, video production, and tech consulting. But the architecture is **completely generic**. Swap out the company config and documents, and you have your own enterprise chatbot.
+Built for [Pendakwah Teknologi](https://pendakwah.tech) — a digital transformation company specialising in AI training, cybersecurity, video production, and tech consulting. But the architecture is **completely generic**. Swap out the company config and documents, and you have your own enterprise chatbot.
 
 ---
 
@@ -92,7 +92,7 @@ sudo systemctl start pt-chatbot
 
 That's it. Your chatbot is live.
 
-### What to Customize
+### What to Customise
 
 | What | Where | Difficulty |
 |------|-------|-----------|
@@ -145,7 +145,7 @@ Before doing anything, the system figures out *what kind of question* this is:
 - **External** — The answer needs current web info. Example: "What's the latest news about AI in Malaysia?"
 - **Hybrid** — Needs both. Example: "How does your AI training compare to current market trends?"
 
-**How it works:** The system checks the question against two keyword lists (`INTERNAL_KEYWORDS` and `EXTERNAL_KEYWORDS` in `agency_config.py`). It also uses regex patterns for common question structures. If the question scores high on internal keywords, it skips web search entirely (faster). If it scores high on external, it prioritizes web results.
+**How it works:** The system checks the question against two keyword lists (`INTERNAL_KEYWORDS` and `EXTERNAL_KEYWORDS` in `agency_config.py`). It also uses regex patterns for common question structures. If the question scores high on internal keywords, it skips web search entirely (faster). If it scores high on external, it prioritises web results.
 
 **Why it matters:** Without this, every question would trigger both document search AND web search, wasting time and potentially polluting answers with irrelevant web results.
 
